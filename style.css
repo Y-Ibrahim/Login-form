@@ -1,0 +1,276 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-family: 'Maven Pro', sans-serif;
+   box-sizing: border-box;
+  
+ 
+
+}
+
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+  
+}
+
+
+.background{
+    background-image: linear-gradient( #78BF97, #485D51);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+} 
+
+
+
+.title{
+    text-decoration: underline;
+    text-decoration-color: #B6181D;
+    font-size:50px;
+  text-align: center;
+  padding: 20px 20px 0;
+  margin:0;
+}
+
+.container{
+   
+    background-color: whitesmoke;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 40px -14px rgba(0,0,0,0.25);
+  
+}
+
+.login-item {
+	color: black;
+	padding:25px 25px 0;
+	margin: 20px 20px 0;	
+	border-radius: 3px;
+}
+
+.form-field {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 2rem;
+    
+  }
+
+.box{
+    
+    background-blend-mode: whitesmoke;
+    width: 450px;
+   align-items: flex-end;
+    
+}
+  
+
+    
+  
+
+  .form input[type="password"], .form input[type="text"] {
+    width: 100%;
+  }
+
+  .form-login label,
+.form-login input[type="text"],
+.form-login input[type="password"] {
+   
+    border: 0;
+    margin: 0 0 15px;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    line-height: 1.5em;
+    font-weight: 700;
+    font-size: 20px;
+    z-index: 1;
+    outline: none;
+    background: #DBDADA;
+    transition: .5s;
+}
+
+.form-login label h1{
+    color: black;
+      font-size: 4.8rem;
+      font-weight:700;
+      letter-spacing: -0.02em;
+      line-height: 110%;
+}
+
+
+.form-login input[type="text"]:hover,
+.form-login input[type="password"]:hover {
+    background-color: #CDCDCD;
+}
+
+
+.form-login input[type="text"]:focus,
+.form-login input[type="password"]:focus {
+    border: 2px solid black;
+    background: whitesmoke;
+
+    
+}
+
+  .box input[type= "submit"] {
+      font-size: 20px;
+  }
+
+  .box h1{
+      color: black;
+      font-size: 4.8rem;
+      font-weight:700;
+      letter-spacing: -0.02em;
+      line-height: 110%;
+
+  }
+
+  .box input[type = "text"]:hover, .box input[type = "password"]:hover{
+    background-color: #CDCDCD;
+  }
+
+
+  .box input[type="text"]:focus, .box input[type="password"]:focus{
+      border: 2px solid black;
+      background: whitesmoke;
+      
+  }
+  .checkbox-wrapper{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-350%, 5%);
+  }
+
+  .checkmark {
+      display: block;
+      width: 60px;
+      height: 60px;
+      background-color: #dddddd;
+      border-radius: 10px;
+      position: relative;
+      transition: background-color 0.4s;
+      z-index: 1;
+      border: 2px solid black;
+  }
+
+
+  #check:checked ~ .checkmark{
+      background-color: #B6181D;
+  }
+
+
+    
+  .checkmark::after{
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 45px;
+      border-right: 5px solid #ffffff;
+      border-bottom: 5px solid #ffffff;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotateZ(40deg) scale(1);
+      opacity: 0;
+  }
+
+  .checkmark:hover{
+      color:   #9F9D9D; 
+  }
+
+  
+
+  #check:checked ~ .checkmark::after {
+      opacity: 1;
+      transform: translate(-50%, -50%) rotateZ(40deg) scale(1);
+  }
+
+  .check-text{
+      font-weight: 700;
+      line-height: 1.5em;
+     font-weight: 700;
+     font-size: 20px;
+     position: absolute;
+     top: 5px;
+     right: -140px;
+     color:  #9F9D9D;
+     z-index: 1;
+  }
+
+  .check-text:hover{
+      cursor: pointer;
+      color: black;
+  }
+
+  .dropdown{
+      top: 50%;
+      left: 315%;
+  }
+
+  
+
+  .eye:hover{
+      color: #559DF3;
+  }
+
+
+  .user:before {
+    content: '\f007';
+    font: 14px fontawesome;
+      color: #5b5b5b;
+  }
+  
+  
+
+  
+
+
+.enter{
+    position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-350%, 5%);
+}
+
+#hide1{
+    display: none;
+}
+
+.login-box{
+   margin: 100px auto 25px;
+   width: 300px;
+   display: block;
+   outline: none;
+   padding: 10px 0;
+   border: 2px solid black;
+   background-color: #BE3232;
+   font-size: 1.5em;
+   white-space: nowrap;
+   color: white;
+   
+}
+
+.login-box:hover{
+    background-color: #932929;
+}
+
+
+
+
